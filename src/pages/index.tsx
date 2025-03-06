@@ -41,7 +41,8 @@ export default function Home() {
       {/* Основной контент */}
       <Container maxWidth="md" sx={{ marginTop: 3 }}>
         {isLoading && <Loader />}
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
+        
+    {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
         {matches.map((match: any) => (
           <MatchRow key={match.id || match.title} match={match} />
         ))}
